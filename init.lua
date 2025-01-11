@@ -23,3 +23,8 @@ cmp.setup({
         { name = 'luasnip' },
     },
 })
+local lspconfig = require("lspconfig")
+
+lspconfig.clangd.setup{
+	cmd = { "clangd" }
+}
