@@ -7,3 +7,5 @@ vim.api.nvim_set_keymap("n", "<leader>rbrst", ":!cargo build --release <CR>", op
 vim.api.nvim_set_keymap("n", "<leader>crst", ":!cargo check<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>l", ":Lazy<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>p", ":Lazy profile<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>hlsp", ":checkhealth lsp<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>mk", ":!make <CR>", opts)
