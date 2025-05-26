@@ -9,3 +9,7 @@ vim.api.nvim_set_keymap("n", "<leader>l", ":Lazy<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>p", ":Lazy profile<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>hlsp", ":checkhealth lsp<CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>mk", ":!make <CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>xmk", ":!xmake <CR>",opts)
+vim.api.nvim_set_keymap("n", "<leader>xmkr", ":!xmake run<CR>",opts)
+vim.api.nvim_set_keymap("n", "<leader>f", ":Telescope<CR>",opts)
+

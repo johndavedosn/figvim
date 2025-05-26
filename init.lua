@@ -2,7 +2,6 @@ vim.g.mapleader = " "
 
 require("config.lazy")
 require("config.keymaps")
-vim.cmd("colorscheme cyberdream")
 local cmp = require('cmp')
 cmp.setup({
     snippet = {
