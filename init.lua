@@ -27,3 +27,6 @@ local lspconfig = require("lspconfig")
 lspconfig.clangd.setup{
 	cmd = { "clangd" }
 }
+require("lualine").setup{
+	options = { theme = 'ayu_dark' }
+}
