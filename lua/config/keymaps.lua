@@ -12,4 +12,4 @@ vim.api.nvim_set_keymap("n", "<leader>mk", ":!make <CR>", opts)
 vim.api.nvim_set_keymap("n", "<leader>xmk", ":!xmake <CR>",opts)
 vim.api.nvim_set_keymap("n", "<leader>xmkr", ":!xmake run<CR>",opts)
 vim.api.nvim_set_keymap("n", "<leader>f", ":Telescope<CR>",opts)
-
+vim.api.nvim_set_keymap("n", "<leader>msn", ":Mason<CR>",opts)

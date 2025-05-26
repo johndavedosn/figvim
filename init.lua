@@ -1,5 +1,7 @@
+require("plugins.impatient")
+vim.opt.number = true
 vim.g.mapleader = " "
-
+vim.env.PATH = vim.env.PATH .. ':' .. os.getenv("HOME") .. '/.local/bin'
 require("config.lazy")
 require("config.keymaps")
 local cmp = require('cmp')
@@ -30,3 +32,11 @@ lspconfig.clangd.setup{
 require("lualine").setup{
 	options = { theme = 'ayu_dark' }
 }
+lspconfig.pyright = nil 
+require("mason").setup()
+require("mason-lspconfig").setup{
+	ensure_installed = { "pylsp" },
+	automatic_installation = false,
+
+}
+lspconfig.pylsp.setup{}
